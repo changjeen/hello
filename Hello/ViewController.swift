@@ -36,11 +36,15 @@ class ViewController: UIViewController, UITabBarDelegate {
         if(item.tag == 1) {
             //your code for tab item 1
             url = "https://www.naver.com"
-            self.webView.reload()
+            let url3 = URL(string: url)
+            let request2 = URLRequest(url: url3!)
+            webView.load(request2)
         }
         else if(item.tag == 2) {
             url = "https://www.daum.net"
-            viewDidLoad()
+            let url3 = URL(string: url)
+            let request2 = URLRequest(url: url3!)
+            webView.load(request2)
 
         }
         
